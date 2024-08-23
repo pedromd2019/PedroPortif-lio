@@ -1,0 +1,155 @@
+/* Define a imagem de fundo e estilos globais */
+body {
+    background-image: url(img/fundo1.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: black;
+    }
+    html {
+    scroll-behavior: smooth; /* Adiciona rolagem suave nas âncoras */
+    scroll-padding-top: 160px; /* Espaço superior para compensar o cabeçalho 
+    fixo */
+    }
+    /* Estilos do cabeçalho */
+    header {
+    position: fixed;
+    }
+    /* Estilos para a imagem flutuante */
+    .imagem {
+    float: right;
+    margin-left: 10px;
+    margin-top: 20px;
+    }
+    /* Estilos para o contêiner do cabeçalho */
+    .header-container {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    box-sizing: border-box;
+    padding: 0 112px;
+    position: relative;
+    }
+    /* Estilos para os cabeçalhos h1 e h2 */
+    h1 { 
+    font-size: 80px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    }
+    h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    }
+    /* Estilos para os links de redes sociais no cabeçalho */
+    .social-media {
+    margin-top: 1rem;
+    display:flex;
+    }
+    .social-media a {
+    text-decoration: none;
+    font-size: 35px;
+    color: hsl(0, 0%, 0%);
+    padding: 1rem 4rem;
+    border: 1px solid #000000;
+    min-width: 4rem;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    transition: .5s ease-in-out;
+    }
+    a:hover {
+    background-color: hwb(198 0% 0%); } 
+    /* Container global */
+    .container {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    align-items: center;
+    }
+    /* Estilos para os cartões */
+    .card {
+    width: 300px;
+    height: 300px;
+    border-radius: 90%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fdfdfd;
+    background-image: url("img/fundo.png");
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    text-align: auto;
+    }
+    .card-text {
+    width: 50%; 
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+    }
+    section {
+    padding: 20px;
+    font-size: 20px;
+    text-align: justify;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .card-wrapper h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    }
+    /* Estilos para o formulário de contato */
+    #formulario {
+    margin-bottom: 20px;
+    text-align: left;
+    padding: 20px;
+    background-color: #d5000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    #formulario {
+    display: block;
+    color: #3974af;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    #formulario input[type="text"],
+    #formulario input[type="email"],
+    #formulario textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #7d69ff;
+    border-radius: 5px;
+    background-color: #FFF;
+    transition: border-color0.3s ease;
+    }
+    #formulario textarea {
+    resize: vertical;
+    height: 150px;
+    }
+    #formulario input[type="submit"] {
+    background-color: #066a98;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease
+}
